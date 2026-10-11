@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CartaResource" format=3 uid="uid://cmtyyev0jjehn"]
+
+[ext_resource type="Script" uid="uid://b0vg7nkmf1s47" path="res://cartas/scripts_cartas/Carta_Resource.gd" id="1_gia2h"]
+
+[resource]
+script = ExtResource("1_gia2h")
+nome = "Coletores"
+numero = 1
+vida = 20
+transportadores = 2
+descricao = "Um grupo de pessoas preparadas para coletar bananas, gravetos, pedras e mais..."
+inteligencia = 1
+destreza = 6
+sabedoria = 7
+forca = 3
+metadata/_custom_type_script = "uid://b0vg7nkmf1s47"

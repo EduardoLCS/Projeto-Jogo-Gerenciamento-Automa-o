@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cho3dypqq0u7m"]
+
+[ext_resource type="Script" uid="uid://dve4igdax186y" path="res://cenas/main.gd" id="1_mtgg2"]
+[ext_resource type="PackedScene" uid="uid://c6p02503hxb4n" path="res://Recursos/Plantas/Bananeira/Bananeira_.tscn" id="2_t4ukd"]
+
+[node name="Main" type="Node2D" unique_id=1085255760]
+script = ExtResource("1_mtgg2")
+
+[node name="TimerGlobal" type="Timer" parent="." unique_id=1536911825]
+autostart = true
+
+[node name="Bananeira" parent="." unique_id=355243891 instance=ExtResource("2_t4ukd")]
+position = Vector2(372, 294)

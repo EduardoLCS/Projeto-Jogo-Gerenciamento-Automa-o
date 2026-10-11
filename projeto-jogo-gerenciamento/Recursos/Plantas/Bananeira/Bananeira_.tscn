@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c6p02503hxb4n"]
+
+[ext_resource type="Script" uid="uid://bju2yugjbfnli" path="res://Recursos/Plantas/Bananeira/bananeira_.gd" id="1_dcxjn"]
+[ext_resource type="Texture2D" uid="uid://ciiua3ow6rmua" path="res://Recursos/Plantas/Bananeira/Sprites/muda_bananeira_1.png" id="2_4skgl"]
+[ext_resource type="Texture2D" uid="uid://1yw6s2g5mqfn" path="res://Recursos/Plantas/Bananeira/Sprites/bananeira_intermediario_1.png" id="3_r2k1o"]
+[ext_resource type="Texture2D" uid="uid://d2f5apymo6wp0" path="res://Recursos/Plantas/Bananeira/Sprites/bananeira_adulta_cacho_verde_1.png" id="4_63tib"]
+[ext_resource type="Texture2D" uid="uid://cy4xp2xywb24m" path="res://Recursos/Plantas/Bananeira/Sprites/bananeira_cortada_1.png" id="6_oaxtr"]
+[ext_resource type="Texture2D" uid="uid://vsseewtr0fpq" path="res://Recursos/Plantas/Bananeira/Sprites/bananeira_madura_1.png" id="7_r2k1o"]
+
+[node name="Bananeira" type="Node2D" unique_id=1448303266 groups=["plantas"]]
+script = ExtResource("1_dcxjn")
+texturas_estagios = Array[Texture2D]([ExtResource("2_4skgl"), ExtResource("3_r2k1o"), ExtResource("4_63tib"), ExtResource("7_r2k1o"), ExtResource("6_oaxtr")])
+estagio_atual = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1505025973]
+scale = Vector2(0.1590909, 0.1590909)
+texture = ExtResource("6_oaxtr")

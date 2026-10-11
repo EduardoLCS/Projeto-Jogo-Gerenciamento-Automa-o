@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dd8l0qcsmrxuv"]
+
+[ext_resource type="Script" uid="uid://beaaf4nxgueg8" path="res://Construções/sede.gd" id="1_dchjw"]
+[ext_resource type="Texture2D" uid="uid://qua3dm5qfng" path="res://Construções/sprites/sede (2).png" id="2_lvnvh"]
+[ext_resource type="Script" uid="uid://0jwiyx2huef1" path="res://sistemas/inventario/Inventario.gd" id="3_lvnvh"]
+[ext_resource type="Script" uid="uid://b7goov08j0faa" path="res://sistemas/cartas/CardSistem.gd" id="4_jviac"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y41jf"]
+radius = 1236.7882
+
+[node name="Sede" type="Area2D" unique_id=1166889540]
+script = ExtResource("1_dchjw")
+
+[node name="Sede(2)" type="Sprite2D" parent="." unique_id=724051385]
+scale = Vector2(0.2184466, 0.20049633)
+texture = ExtResource("2_lvnvh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1528900332]
+shape = SubResource("CircleShape2D_y41jf")
+
+[node name="InventariodaSede" type="Node" parent="." unique_id=1629848552]
+script = ExtResource("3_lvnvh")
+slots_maximos = 10
+metadata/_custom_type_script = "uid://0jwiyx2huef1"
+
+[node name="OperacoesCartas" type="Node" parent="." unique_id=1207496613]
+script = ExtResource("4_jviac")
+num_slots_cartas_comuns = 2
+metadata/_custom_type_script = "uid://b7goov08j0faa"
+
+[node name="TempoColeta" type="Timer" parent="." unique_id=1670228019]
